@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="8dp"
+    tools:context=".view.fragments.LoginFragment">
+<RelativeLayout
+    android:id="@+id/vps_Relative_graphics"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/voto_electronico_validez_legal_removebg_preview"
+        />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/vpf_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vps_Relative_graphics"
+        android:visibility="visible"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ne_Relativelayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Enter number +88">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vpf_phone_et"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                app:errorEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/vpf_buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ne_Relativelayout1"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:text="Continue"
+            android:textColor="@android:color/white"
+            app:fabSize="normal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/vps_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vpf_relative"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/vps_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="A code has been sent to your number, please check messages and enter here o r it may happen automatically!" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vps_Relativelayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_text1"
+            android:hint="Verification code">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vps_editTextCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                app:errorEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/vps_buttonVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_Relativelayout1"
+            android:layout_marginTop="30dp"
+            android:text="Verify"
+            android:textColor="@android:color/white"
+            app:fabSize="normal" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vps_buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_buttonVerify"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:focusable="true"
+            android:visibility="gone"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:text="Resend"
+                />
+        </androidx.cardview.widget.CardView>
+        <ProgressBar
+            android:id="@+id/vps_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vps_buttonVerify"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vps_relative_newVendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vps_relative"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/vps_text1__newVendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="Please, provide your name, NID number and Biometric information." />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vps_Relativelayout1_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_text1__newVendor"
+            android:hint="Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vps_editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                app:errorEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vps_Relativelayout1_tin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_Relativelayout1_name"
+            android:layout_marginTop="8dp"
+            android:hint="Nid Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vps_editTextTin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                app:errorEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/vps_takeImage"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_Relativelayout1_tin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:text="Face"
+            app:strokeColor="@color/calender" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/vps_takeFinger"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_Relativelayout1_tin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/vps_takeImage"
+            android:text="Finger print"
+            app:strokeColor="@color/calender" />
+
+        <ImageView
+            android:id="@+id/vps_imagePreview"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/vps_takeImage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaulimage" />
+
+        <Button
+            android:id="@+id/vps_buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vps_imagePreview"
+            android:layout_marginTop="16dp"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            app:fabSize="normal" />
+
+        <ProgressBar
+            android:id="@+id/vps_progressbar_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vps_buttonSignIn"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vps_CameraRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextureView
+            android:id="@+id/tracking_texture_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/tracking_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/vps_take_image_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/divider"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="30dp"
+            app:strokeColor="@color/calender"
+            app:strokeWidth="4dp" />
+
+        <ImageButton
+            android:id="@+id/btn_switch_face"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/switch_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

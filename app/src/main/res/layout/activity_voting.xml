@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.VotingActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Please select a candidate and cast your Vote "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/candidateRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutFace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/hollow_rectangle"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/vpf_buttonContinue"
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayoutFinger"
+        app:layout_constraintStart_toStartOf="@+id/vpf_buttonContinue"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_baseline_fingerprint_inactive_24"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFinger"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/hollow_rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/vpf_buttonContinue"
+        app:layout_constraintEnd_toEndOf="@+id/vpf_buttonContinue"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayoutFace"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_baseline_person_not_verified_24"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/vpf_buttonContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Verify Identity"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/title_color"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

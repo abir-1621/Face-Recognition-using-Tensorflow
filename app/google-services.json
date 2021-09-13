@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867842242090",
+    "project_id": "voting-1c928",
+    "storage_bucket": "voting-1c928.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867842242090:android:07dde0dd4e93be8322f553",
+        "android_client_info": {
+          "package_name": "com.abir.voting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867842242090-aohkt8g0ejvase5jv6lrnpdg6d4l291l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdoUx4Z_VIFmSFa5HDz17zZ8oNRarQ8bI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867842242090-aohkt8g0ejvase5jv6lrnpdg6d4l291l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

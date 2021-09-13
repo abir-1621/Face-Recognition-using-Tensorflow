@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.CameraFragment">
+    <ImageView
+        android:id="@+id/tracking_image_view1"
+        android:layout_width="205dp"
+        android:layout_height="250dp" />
+    <TextureView
+        android:id="@+id/tracking_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/tracking_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:strokeWidth="4dp"
+        android:backgroundTint="@color/colorAccent"
+        app:strokeColor="@color/calender"
+        app:cornerRadius="30dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+      />
+
+    <ImageButton
+        android:id="@+id/btn_switch_face"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/switch_icon" />
+
+</RelativeLayout>

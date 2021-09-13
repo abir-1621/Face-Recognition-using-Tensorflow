@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Voting</string>
+
+    <string name="name">Name</string>
+    <string name="phone">01xxxxxxxxx</string>
+    <string name="email">Email(Optional)</string>
+    <string name="password">Password</string>
+    <string name="password_again">Re-Type Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">SignUp</string>
+
+    <!--    Language change -->
+    <string name="change">Change to Bangla</string>
+    <string name="change_msg">English is selected</string>
+
+    <!--    Bottom navigation names in menu-->
+
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="sale_entry">Sale Entry</string>
+    <string name="sale_list">Sale List</string>
+
+
+    <!--    summary fragment -->
+    <string name="summary_no_data">No sales record for the date.</string>
+    <string name="summary">Summary</string>
+    <string name="summary_total">Total</string>
+
+    <!-- home screen station name-->
+    <string name="home_name">John Felling Station </string>
+    <string name="home_card_text">Home</string>
+    <string name="station_name">My Gas Station</string>
+    <string name="station_no_gaslist">No gas pump has assigned yet.Please contact with authority.</string>
+
+    <!--    profile-->
+
+    <string name="p_name">Name</string>
+    <string name="p_logout">Logout</string>
+    <string name="p_profile">Profile</string>
+    <string name="p_overview">My Profile</string>
+    <string name="p_change_password">Change Password</string>
+    <string name="p_rule">Need Help</string>
+    <string name="p_location">Update Location</string>
+    <string name="p_help">Help</string>
+    <string name="p_image_choose">Choose image from</string>
+    <string name="p_head_bar">My Profile</string>
+
+    <!--    sale entry -->
+    <string name="s_gas_station">Ryo Gas</string>
+    <string name="s_gas_station_name">RyoGas Sale Entry</string>
+    <string name="s_gas_transaction_type">Transaction Type</string>
+    <string name="s_gas_type">Payment</string>
+    <string name="s_gas_nozzle">Nozzle</string>
+    <string name="s_gas_record_entry">Sale Record Entry</string>
+    <string name="s_gas_record_entry_hint">Enter Amount</string>
+    <string name="s_gas_rate">Rate  49.2 TK</string>
+    <string name="s_gas_sales">Sales (Liter)</string>
+    <string name="s_gas_submit">Submit</string>
+    <string name="s_gas_submit_2">Submit &amp; Print</string>
+    <string name="s_gas_tk">TK</string>
+    <string name="s_gas_lt">LT</string>
+    <string name="s_gas_lt_nav">Sold (ltr)</string>
+    <string name="s_gas_amount">Sold Amount</string>
+
+
+    <!--    Gas station name-->
+    <string name="gs_name">Vai Vai Felling Gas Station</string>
+    <string name="gs_address">Dhaka Sylhet highway, Gazipur, Dhaka </string>
+
+
+    <!--    Gas station Summary-->
+    <string name="su_print">Print</string>
+    <!--    Gas station sale list -->
+
+    <string name="sl_gas_type">LPG 5 liter</string>
+    <string name="sl_gas_bottom_edit">Edit Transaction</string>
+    <string name="sl_gas_date">dd/mm/yyyy</string>
+    <string name="sl_gas_taka">100 ৳</string>
+    <string name="sl_gas_nozzle">Nozzle 2</string>
+    <string name="sl_gas_edit">edit</string>
+    <string name="RyosharedPref">UserInfo</string>
+    <string name="ShareLocation">Location</string>
+    <string name="offlineTransactionID">OflIneTid</string>
+    <string name="search">Search for transactions</string>
+    <string name="sl_upper_text">Sale Transactions</string>
+    <string name="sl_empty">Empty list</string>
+
+
+    <!--    profile dialog -->
+    <string name="p_edit_pass">Change Password</string>
+    <string name="p_btn_cancel">Cancel</string>
+    <string name="p_btn_save">Save</string>
+
+    <string name="p_current_pass">Current Password</string>
+    <string name="p_new_pass">New Password</string>
+    <string name="p_new_pass_confirm">Confirm Password</string>
+
+    <string name="p_help_phone">Press the call icon</string>
+    <string name="p_help_email">Press the email icon</string>
+    <string name="p_help_text">Please select an option..</string>
+
+    <string name="p_details_text">My Profile</string>
+    <string name="p_details_phone">Phone</string>
+    <string name="p_details_email">Email</string>
+    <string name="p_details_status">Status</string>
+    <string name="p_details_close">Close</string>
+    <string name="todo">TODO</string>
+    <string name="signUpSuccess">Successfully submitted the Sign-up information, Please contact with authority to activate your account.</string>
+    <string name="great">Great!</string>
+
+    <!-- Car entry -->
+    <string name="sale_entry_date">Fri, 25 Jun 2021</string>
+    <string name="sl_select_company">Company</string>
+    <string name="company_name">Select a corporate name</string>
+    <string name="sl_select_car">Car No</string>
+    <string name="sl_select_driver">Driver</string>
+    <string name="car_number">Select car No </string>
+    <string name="driver_name">Select a driver </string>
+    <string name="driver_phone_number"> +8801778899665 </string>
+    <string name="timer_text"> 99:99 </string>
+    <string name="otp_number_1_text"> 1 </string>
+    <string name="otp_number_2_text"> 2 </string>
+    <string name="otp_number_3_text"> 3 </string>
+    <string name="otp_number_4_text"> 4 </string>
+    <string name="send_otp">Send OTP </string>
+
+    <!--    bottom sheet-->
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+
+    <!--    bottom sheet otp -->
+    <string name="otp_name">Md Kamal Hossain</string>
+    <string name="otp_phone">+88 01XXXXXXXXX</string>
+    <string name="otp_resend">VERIFY</string>
+    <string name="otp_timer">00.00</string>
+
+
+    <!--    No Internet   -->
+    <string name="button">Retry</string>
+    <string name="oops">Oops !</string>
+    <string name="detail_text">No internet connection found.\nPlease, Check network settings.</string>
+
+
+    <!-- Corporate Customers-->
+    <string name="cc_headbar">Corporate Customers</string>
+    <string name="cc_name">Driver Name:  </string>
+    <string name="cc_carNUm">Car Number:</string>
+    <string name="cc_phoneNum">Phone Number: </string>
+    <string name="cc_agent">Corporate Name: </string>
+    <string name="cc_button">Close</string>
+    <string name="cc_details">Corporate Driver Details</string>
+
+
+    <!--    spinner-->
+
+    <color name="colorPrimary">#D67855</color>
+    <color name="colorAccent">#666666</color>
+    <color name="colorDarkGray">#FF4500</color>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="instructions">Place your fingertip on the Home button to verify your identity</string>
+</resources>

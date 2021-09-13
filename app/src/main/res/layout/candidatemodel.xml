@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_margin="2dp"
+    android:background="@drawable/hollow_rectangle_light"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_gravity="center"
+    android:id="@+id/votingLayout"
+    android:clickable="true"
+    android:focusable="true">
+    <ImageView
+        android:id="@+id/h_topjiinimgView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/h_topjiintxtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/h_topjiintxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="default"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/h_topjiinimgView"
+        app:layout_constraintStart_toStartOf="@+id/h_topjiinimgView"
+        app:layout_constraintTop_toBottomOf="@+id/h_topjiinimgView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
